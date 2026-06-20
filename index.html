@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイム計測</title>
+
+```
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+<body>
+
+```
+<h1>ストップウォッチ</h1>
+
+<input
+    id="name"
+    type="text"
+    placeholder="氏名を入力">
+
+<div id="time">0.00</div>
+
+<button id="btn">
+    START
+</button>
+
+<button id="deleteBtn">
+    最後の記録を削除
+</button>
+
+<button id="clearBtn">
+    全記録削除
+</button>
+
+<h3>
+    平均 :
+    <span id="avg">0.00</span>
+    秒
+</h3>
+
+<h3>
+    ベスト :
+    <span id="best">0.00</span>
+    秒
+</h3>
+
+<h3>
+    最長 : 
+    <span id="max">0.00</span>
+    秒
+</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>氏名</th>
+            <th>タイム</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+
+    <tbody id="records"></tbody>
+</table>
+
+<script src="script.js"></script>
+```
+
+</body>
+</html>
