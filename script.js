@@ -100,10 +100,14 @@ function updateTable(){
   });
 
   if(records.length === 0){
-    document.getElementById("avg").textContent = "0.00";
-    document.getElementById("best").textContent = "0.00";
-    return;
-  }
+  document.getElementById("avg").textContent = "0.00";
+  document.getElementById("best").textContent = "0.00";
+
+  const maxEl = document.getElementById("max");
+  if(maxEl) maxEl.textContent = "0.00";
+
+  return;
+}
 
   const times = records.map(r => r.time);
 
